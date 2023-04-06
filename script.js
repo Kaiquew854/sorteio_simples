@@ -24,7 +24,7 @@ function sortearNomes() {
 
             const novoItem = document.createElement("li");
             cont++
-            novoItem.textContent = cont + " - " + nomes[numAleatorio];
+            novoItem.textContent = cont + "° - " + nomes[numAleatorio];
             listaNomesSorteados.appendChild(novoItem);
 
             let linhas = nomesEleg.value.split('\n');
