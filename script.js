@@ -33,7 +33,12 @@ function sortearNomes() {
         } else {
             alert("insira os nomes");
         }
+
+        let meuFieldSet=document.querySelector(".sorteados");
+        let ultimaPosicao = meuFieldSet.scrollHeight-meuFieldSet.clientHeight+meuFieldSet.scrollTop;
+        meuFieldSet.scrollTop=ultimaPosicao
     }
+
 }
 
 btnSort.addEventListener('click', sortearNomes);
