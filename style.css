@@ -1,0 +1,63 @@
+body{
+    background-color: rgba(10, 10, 10, 0.842);
+    color: #fff;
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+}
+.container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 400px;
+}
+
+.sorteados, .nomesElegiveis{
+    border: 1px solid;
+    padding: 10px;
+    width: 45%;
+    margin-top: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+
+.btn-sort{
+    background-color: blueviolet;
+    border-radius: 5px;
+    border: 1px solid blueviolet;
+    height: 25px;
+    width: 100px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.btn-sort:hover{
+    background-color: rgb(178, 101, 250);
+    cursor: pointer;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.lb-qtde, .input-qtde{
+    font-size: 18px;
+}
+.input-qtde{
+    width: 50px;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}

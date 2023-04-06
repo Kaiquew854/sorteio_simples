@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h1 class="title">Sorteio de nomes</h1>
+    <hr><br>
+
+    <div class="container">
+        <fieldset class="sorteados">
+            <legend>Nomes sorteados</legend>
+
+            <ul id="listaNomesSorteados">
+            </ul>
+        </fieldset>
+
+
+        <fieldset class="nomesElegiveis">
+            <legend>Cole ou escreva os nomes aqui</legend>
+
+            <div>
+                <label class="lb-qtde" for="quantidade">Quantidade de nomes a sortear</label>
+                <input class="input-qtde" type="number" name="quantidade">
+            </div><br>
+
+            <textarea name="nomes" id="nomesEleg" cols="1" rows="20"></textarea>
+            <button class="btn-sort">Sortear</button>
+        </fieldset>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h4>criado por: Kaique Winicios</h4>
+        </div>
+    </footer>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
