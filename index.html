@@ -11,40 +11,55 @@
 
 <body>
 
-    <h1 class="title">Sorteio de nomes</h1>
-    <hr><br>
+    <div class="content">
+        <header>
+            <h1 class="title">Sorteio de nomes</h1>
+            <hr><br>
+        </header>
 
-    <div class="container">
-    
-        <fieldset class="sorteados">
-            <legend>Nomes sorteados</legend>
-            <ul id="listaNomesSorteados">
-            </ul>
-        </fieldset>
+        <main>
+            <div class="container">
+
+                <fieldset class="nomesElegiveis">
+                    <legend>Cole ou escreva os nomes aqui</legend>
+
+                    <div>
+                        <label class="lb-qtde" for="quantidade">sortear
+                            <input class="input-qtde" type="number" name="quantidade" value="1">
+                            nomes
+                        </label>
+                    </div>
+
+                    <div class="txt-area-div">
+                        <textarea name="nomes" id="nomesEleg" cols="1" rows="15"></textarea>
+                        <h6>*Após cada nome pule uma linha</h6>
+                    </div>
+
+                    <button class="btn-sort">Sortear</button>
+                </fieldset>
+
+                <fieldset class="sorteados">
+                    <legend>Nomes sorteados</legend>
 
 
-        <fieldset class="nomesElegiveis">
-            <legend>Cole ou escreva os nomes aqui</legend>
-        
-            <div>
-                <label class="lb-qtde" for="quantidade">Quantidade de nomes a sortear</label>
-                <input class="input-qtde" type="number" name="quantidade">
+                    <ul id="listaNomesSorteados">
+                        <li>nome</li>
+                        <li>nome</li>
+                        <li>nome</li>
+                    </ul>
+                </fieldset>
             </div>
-            <div class="txt-area-div">
-                <textarea name="nomes" id="nomesEleg" cols="1" rows="15"></textarea>
-                <h6>*Após cada nome pule uma linha</h6>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <h4>criado por: Kaique Winicios</h4>
             </div>
-            <button class="btn-sort">Sortear</button>
-            
-        </fieldset>
+        </footer>
     </div>
-
-    <footer>
-        <div class="footer">
-            <h4>criado por: Kaique Winicios</h4>
-        </div>
-    </footer>
 </body>
+
+
 
 <script src="./script.js"></script>
 

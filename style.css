@@ -1,27 +1,38 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background-color: rgba(10, 10, 10, 0.842);
     color: #fff;
 }
-.title{
+
+.content{
+    min-height: calc(100vh - 190px);
+    padding: 40px 40px 0 40px;
+
+}
+.title {
     text-align: center;
     font-size: 50px;
 }
-.container{
+
+.container {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-between;
     align-items: center;
     min-height: 400px;
 }
 
-.sorteados, .nomesElegiveis{
+.sorteados {
     border: 1px solid;
     padding: 10px;
     width: 45%;
     margin-top: 25px;
     height: inherit;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     font-size: 25px;
     height: 400px;
     max-height: 400px;
@@ -29,7 +40,21 @@ body{
 }
 
 
-.btn-sort{
+.nomesElegiveis {
+    border: 1px solid;
+    padding: 10px;
+    width: 45%;
+    margin-top: 25px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    height: 400px;
+    max-height: 400px;
+}
+
+
+.btn-sort {
     background-color: blueviolet;
     border-radius: 5px;
     border: 1px solid blueviolet;
@@ -37,39 +62,193 @@ body{
     width: 100px;
     color: #fff;
     font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
+    margin-top: 7px;
 }
 
-.btn-sort:hover{
+.btn-sort:hover {
     background-color: rgb(178, 101, 250);
     cursor: pointer;
 }
 
-ul, li{
+#listaNomesSorteados{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+}
+li{
     list-style: none;
+    width: 95%;
 }
 
-.lb-qtde, .input-qtde{
+
+
+.lb-qtde,
+.input-qtde {
     font-size: 18px;
 }
-.input-qtde{
+
+.input-qtde {
     width: 50px;
     text-align: center;
 }
-.footer{
+
+.txt-area-div {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 98%;
+    margin-top: 4px;
+}
+
+#nomesEleg {
+    font-size: 22px;
+}
+
+.txt-area-div h6 {
+    margin-top: 2px;
+    width: 100%;
+    height: 21px;
+    background-color: red;
+}
+
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: black;
+    height: 140px;
 }
 
-#nomesEleg{
-    width: 50%;
+@media (max-width:480px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sorteados,
+    .nomesElegiveis {
+        width: 98%;
+    }
+
+    .txt-area-div {
+        height: 80%;
+        margin-top: 10px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .txt-area-div h6 {
+        width: 100%;
+        max-height: 70px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #nomesEleg {
+        height: 100%;
+        width: 100%;
+    }
+    .title {
+        font-size: 22px;
+    }
+    legend {
+        font-size: 15px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+    .lb-qtde {
+        font-size: 15px;
+    }
+    #nomesEleg{
+        font-size: 12px;
+    }
+    .input-qtde {
+        width: 15px;
+        font-size: 12px;
+    }
+    .nomesElegiveis {
+        align-items: center;
+    }
+    .txt-area-div h6{
+        min-height: 30px;
+    }
+    .sorteados{
+        align-items: start;
+    }
+
+
 }
-.txt-area-div{
-    display: flex;
-    justify-content: start;
-    align-items: start;
+@media (min-width: 481px) and (max-width:768px) {
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sorteados,
+    .nomesElegiveis {
+        width: 100%;
+        display: flex;
+    }
+
+    .txt-area-div {
+        height: 80%;
+        margin-top: 10px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .txt-area-div h6 {
+        width: 100%;
+        max-height: 70px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: red;
+    }
+
+    #nomesEleg {
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width:1024px) {
+
+    .sorteados,
+    .nomesElegiveis {
+        display: flex;
+    }
+
+    .txt-area-div {
+        height: 80%;
+        margin-top: 10px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .txt-area-div h6 {
+        width: 100%;
+        max-height: 70px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    #nomesEleg {
+        height: 100%;
+        width: 100%;
+    }
 }
